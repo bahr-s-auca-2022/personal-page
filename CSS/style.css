@@ -43,4 +43,5 @@ h3 {
 #fav {
   display: flex;
   justify-content: space-evenly;
+  gap: 50px;
 }
