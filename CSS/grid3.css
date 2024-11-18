@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://cdn.imgchest.com/files/l4necm6rp4m.png);
+  background-repeat: no-repeat;
+  max-width: 1143px;
+  min-height: 1583px;
+  font-size: 2rem;
+  opacity: 0.5;
+  color: blue;
+}
+img:nth-of-type(1) {
+  display: none;
+}
+body {
+  background-image: none;
+  opacity: 1;
+}
+
+.container > * {
+  border: 2px dashed blue;
+}
+
+.container {
+  display: grid;
+  grid-template-rows:
+    minmax(120px, auto) 31px minmax(94px, auto) minmax(77px, auto)
+    minmax(415px, auto) minmax(194px, auto) minmax(494px, auto);
+  grid-template-columns:
+    minmax(20px, 272px) minmax(20px, 474px) minmax(20px, 87px)
+    minmax(20px, 286px);
+  grid-template-areas:
+    "one   one   one   one"
+    "two   two   two   two"
+    "three eight eight eight"
+    "four  four  four  four"
+    "five  five  five  nine"
+    "six   six   six   six"
+    "seven seven ten   ten";
+}
+
+.box1 {
+  grid-area: one;
+}
+.box2 {
+  grid-area: two;
+}
+.box3 {
+  grid-area: three;
+}
+.box4 {
+  flex-direction: column;
+  grid-area: four;
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.main {
+  flex-basis: 20px;
+}
+.weather {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.weather {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  color: black;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: whitesmoke;
+  color: black;
+}
+.nav-items li {
+  padding: 10px; /* Add padding around menu items */
+  border-bottom: 1px solid white; /* Add bottom border */
+}
+
+.box5 {
+  grid-area: five;
+}
+.box6 {
+  grid-area: six;
+}
+.box7 {
+  grid-area: seven;
+}
+.box8 {
+  grid-area: eight;
+}
+.box9 {
+  grid-area: nine;
+}
+.box10 {
+  grid-area: ten;
+}
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 100%;
+
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine";
+  }
+}
