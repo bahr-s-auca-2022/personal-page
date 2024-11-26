@@ -29,10 +29,7 @@ body {
 .container {
   display: grid;
   grid-template-rows:
-    minmax(120px, auto) minmax(415px, auto) minmax(94px, auto) minmax(
-      77px,
-      auto
-    )
+    minmax(94px, auto) minmax(415px, auto) minmax(94px, auto) minmax(77px, auto)
     minmax(415px, auto) minmax(194px, auto) minmax(494px, auto);
   grid-template-columns:
     minmax(20px, 900px) minmax(20px, 474px) minmax(20px, 87px)
@@ -86,7 +83,6 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: hsl(0, 0%, 96%);
   color: black;
   padding: 10px;
   border-bottom: 1px solid hsl(0, 0%, 100%);
