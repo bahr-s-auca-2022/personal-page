@@ -11,7 +11,7 @@ body {
   min-height: 1583px;
   font-size: 2rem;
   opacity: 0.5;
-  color: blue;
+  color: hsl(240, 100%, 50%);
 }
 
 body > img:nth-of-type(1) {
@@ -23,100 +23,104 @@ body {
 }
 
 .container > * {
-  border: 2px dashed blue;
+  border: 2px dashed hsl(240, 100%, 50%);
 }
 
 .container {
   display: grid;
   grid-template-rows:
-    minmax(120px, auto) 31px minmax(94px, auto) minmax(77px, auto)
+    minmax(120px, auto) minmax(415px, auto) minmax(94px, auto) minmax(
+      77px,
+      auto
+    )
     minmax(415px, auto) minmax(194px, auto) minmax(494px, auto);
   grid-template-columns:
-    minmax(20px, 272px) minmax(20px, 474px) minmax(20px, 87px)
+    minmax(20px, 900px) minmax(20px, 474px) minmax(20px, 87px)
     minmax(20px, 286px);
   grid-template-areas:
     "one   one   one   one"
-    "two   two   two   two"
     "three eight eight eight"
     "four  four  four  four"
-    "five  five  five  nine"
+    "nine  five  five  five"
     "six   six   six   six"
     "seven seven ten   ten";
 }
 
 .box1 {
   grid-area: one;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 20px;
+  background-color: hsl(0, 0%, 100%);
+}
+.box1 img {
+  max-width: 180px;
+  margin: 10px 0;
 }
 .box2 {
   grid-area: two;
 }
+
 .box3 {
   grid-area: three;
-}
-.box3 img {
-  max-width: 250px;
-  margin-top: 13px;
-  margin-left: 5px;
-}
-.box4 {
-  flex-direction: column;
-  grid-area: four;
   display: flex;
-  background-color: white;
-  padding: 10px;
-  max-width: 100%;
-  min-height: 100%;
+  flex-direction: column;
+  background-color: hsl(209, 14%, 43%);
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.box3 .weather {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 20%);
 }
 
 .main {
   flex-basis: 20px;
 }
-.weather {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
 .weather {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
+  background-color: hsl(0, 0%, 96%);
   color: black;
   padding: 10px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid hsl(0, 0%, 100%);
 }
 
-.nav-items {
-  display: flex;
-  flex-direction: column;
+.box3 .nav-items {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+}
+.box3 .nav-items li {
+  padding: 12px 10px;
   font-size: 1rem;
-  text-transform: uppercase;
-  background-color: whitesmoke;
-  color: black;
-}
-.nav-items li {
-  padding: 10px;
-  border-bottom: 1px solid white;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 33%);
+  border: 1px solid hsl(0, 11%, 74%);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+.box3 .nav-items li:hover {
+  background-color: hsl(218, 52%, 80%);
+  color: white;
+  box-shadow: 0px 2px 4px hsla(0, 0%, 0%, 0.2);
+  transform: scale(1.02);
+}
+
+.box4 {
+  grid-area: four;
+}
 .box5 {
   grid-area: five;
-  background-image: url(https://media.kg/wp-content/uploads/2023/11/photo_5959806038972674669_y.jpg);
-  background-position: top;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-blend-mode: multiply;
-  background-color: gray;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 0.8em;
-  color: white;
 }
 .box6 {
   grid-area: six;
@@ -124,9 +128,25 @@ body {
 .box7 {
   grid-area: seven;
 }
+
 .box8 {
   grid-area: eight;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://media.kg/wp-content/uploads/2023/11/photo_5959806038972674669_y.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: hsl(0, 0%, 50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
 }
+
 .box9 {
   grid-area: nine;
 }
