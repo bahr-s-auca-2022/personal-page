@@ -29,7 +29,10 @@ body {
 .container {
   display: grid;
   grid-template-rows:
-    minmax(94px, auto) minmax(415px, auto) minmax(94px, auto) minmax(77px, auto)
+    minmax(94px, auto) minmax(415px, auto) minmax(200px, auto) minmax(
+      77px,
+      auto
+    )
     minmax(415px, auto) minmax(194px, auto) minmax(494px, auto);
   grid-template-columns:
     minmax(20px, 900px) minmax(20px, 474px) minmax(20px, 87px)
@@ -38,7 +41,7 @@ body {
     "one   one   one   one"
     "three eight eight eight"
     "four  four  four  four"
-    "nine  five  five  five"
+    "nine  nine  nine  five"
     "six   six   six   six"
     "seven seven ten   ten";
 }
@@ -49,7 +52,7 @@ body {
   align-items: center;
   justify-content: start;
   padding-left: 20px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: white;
 }
 .box1 img {
   max-width: 180px;
@@ -63,7 +66,7 @@ body {
   grid-area: three;
   display: flex;
   flex-direction: column;
-  background-color: hsl(209, 14%, 43%);
+  background-color: whitesmoke;
   padding: 20px;
   font-family: "Arial", sans-serif;
 }
@@ -114,6 +117,9 @@ body {
 
 .box4 {
   grid-area: four;
+  background-image: url("https://nazarnews.org/static/app/images/ads/2_00000.png");
+  background-size: cover;
+  background-position: center;
 }
 .box5 {
   grid-area: five;
@@ -145,7 +151,52 @@ body {
 
 .box9 {
   grid-area: nine;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.box9 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.topic-item {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.topic-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.topic-item p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.topic-item span {
+  font-size: 12px;
+  color: hsl(0, 0%, 53%);
+}
+
 .box10 {
   grid-area: ten;
 }

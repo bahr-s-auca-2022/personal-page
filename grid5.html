@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="CSS/grid2b.css" class="style" />
+  </head>
+  <body>
+    <button
+      onclick="switchStyle()"
+      style="position: absolute; top: 0; right: 0"
+    >
+      Style
+    </button>
+    <img
+      src="https://cdn.imgchest.com/files/w7w6cvw89ye.png"
+      style="position: absolute; top: 0; left: 0; z-index: -1"
+    />
+    <div class="container">
+      <div class="box1">
+        <img
+          class="logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbi1YgPpTuPv81n-TOLo269ldcgIlU1SRFKQ&s"
+          alt="nazarnews"
+        />
+      </div>
+      <div class="box2">2</div>
+      <div class="box3">
+        <ul class="weather">
+          <li class="bold">-2°C Bishkek</li>
+        </ul>
+        <ul class="nav-items">
+          <li class="main">Main page</li>
+          <li>Categories</li>
+          <li>Archive</li>
+          <li>Nazar TV</li>
+          <li>Live broadcasting</li>
+          <li>Discounts</li>
+          <li>Site managment</li>
+        </ul>
+      </div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+      <div class="box6">6</div>
+      <div class="box7">7</div>
+      <div class="box8">
+        <h1>Tech News: Innovation, Gadgets, and Trends</h1>
+      </div>
+      <div class="box9">
+        <h2>Topic of the Day</h2>
+        <div class="topic-grid">
+          <div class="topic-item">
+            <img
+              src="https://nazarnews.org/resize/250/250//media/news_images/2024/11/13/News_131480758932430489037841393616315068018.jpg"
+              alt="Topic 1"
+            />
+            <p>
+              The condition of the man who set himself on fire in Bishkek is
+              serious
+            </p>
+            <span>01.03.2023 8:58 | Views: 171</span>
+          </div>
+          <div class="topic-item">
+            <img
+              src="https://nazarnews.org/resize/250/250//media/news_images/2024/11/25/News_8120654256041099903997103152142860473.jpg"
+              alt="Topic 2"
+            />
+            <p>In March, the domestic debt will increase by 120 million soms</p>
+            <span>01.03.2023 8:39 | Views: 0</span>
+          </div>
+          <div class="topic-item">
+            <img
+              src="https://nazarnews.org/resize/250/250//media/news_images/2024/11/01/News_13757297806385486912082022110723304847.jpg"
+              alt="Topic 3"
+            />
+            <p>
+              The Afghan embassy in Tehran has been officially handed over to
+              the Taliban
+            </p>
+            <span>28.02.2023 23:08 | Views: 691</span>
+          </div>
+          <div class="topic-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCY9vAvob_4j6cB8ca4adSdp6pneZkpCmV9bjqD8DcXOWTgq3bP1EkwRhTqpfUXMiEp14&usqp=CAU"
+              alt="Topic 4"
+            />
+            <p>In Russia, a wagon containing migrants caught fire</p>
+            <span>01.03.2023 8:46 | Views: 728</span>
+          </div>
+          <div class="topic-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlnV-IbtRPSIp6a4K7rlMzsHBnWMW0uj-Sao5jqB9DLYqfSJgmC9VORgSPMhprjJamwMc&usqp=CAU"
+              alt="Topic 5"
+            />
+            <p>How many days of rest do Kyrgyz citizens have in March?</p>
+            <span>01.03.2023 8:37 | Views: 565</span>
+          </div>
+          <div class="topic-item">
+            <img
+              src="https://nazarnews.org/resize/250/250//media/news_images/2024/11/25/News_120584574930933134431626339021489257770.jpeg"
+              alt="Topic 6"
+            />
+            <p>
+              A university teacher in Bishkek is suspected of having sex with an
+              underage student
+            </p>
+            <span>28.02.2023 23:01 | Views: 1612</span>
+          </div>
+        </div>
+      </div>
+      <div class="box10">10</div>
+    </div>
+    <script>
+      function switchStyle() {
+        let style = document.querySelector(".style");
+        if (style.getAttribute("href") == "CSS/grid4.css") {
+          style.setAttribute("href", "CSS/grid2b.css");
+        } else {
+          style.setAttribute("href", "CSS/grid4.css");
+        }
+      }
+    </script>
+  </body>
+</html>
