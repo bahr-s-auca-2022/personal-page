@@ -17,19 +17,19 @@ body {
   border: 2px dashed blue;
 }
 
+/*i have 4 columns */
 .container {
   display: grid;
-  grid-template-rows:
-    minmax(120px, auto) 31px minmax(94px, auto) minmax(77px, auto)
-    minmax(415px, auto) minmax(194px, auto) minmax(494px, auto);
+  grid-template-rows: 120px 31px 94px 77px 415px 194px 494px;
   grid-template-columns:
     minmax(20px, 272px) minmax(20px, 474px) minmax(20px, 87px)
     minmax(20px, 286px);
   grid-template-areas:
     "one   one   one   one"
+    "two   two   two   two"
     "three eight eight eight"
     "four  four  four  four"
-    "nine  nine  nine  five"
+    "five  five  five  nine"
     "six   six   six   six"
     "seven seven ten   ten";
 }
@@ -43,6 +43,7 @@ body {
 .box3 {
   grid-area: three;
 }
+
 .box4 {
   grid-area: four;
   display: flex;
@@ -96,6 +97,7 @@ body {
 .box10 {
   grid-area: ten;
 }
+
 @media (max-width: 500px) {
   .container {
     grid-template-columns: 100%;

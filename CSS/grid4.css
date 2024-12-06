@@ -43,7 +43,8 @@ body {
     "four  four  four  four"
     "nine  nine  nine  five"
     "six   six   six   six"
-    "seven seven ten   ten";
+    "seven seven ten   ten"
+    "two   two   two   two ";
 }
 
 .box1 {
@@ -216,4 +217,24 @@ body {
       "eight"
       "nine";
   }
+}
+
+div.fa {
+  font-size: 50px;
+  padding: 10px;
+  position: absolute;
+}
+div.fa-search {
+  color: #999;
+
+  position: relative;
+}
+div.fa-instagram {
+  color: red;
+  background-color: lightyellow;
+}
+
+div.fa-magnifying-glass {
+  color: red;
+  background-color: lightyellow;
 }
