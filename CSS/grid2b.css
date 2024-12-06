@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("https://html.ink.kg/fonts/gothampro_bold.ttf");
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -42,6 +46,16 @@ body {
 }
 .box3 {
   grid-area: three;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 20px;
+  background-color: white;
+}
+
+.box3 img {
+  max-width: 180px;
+  margin: 10px 0;
 }
 
 .box4 {
@@ -81,7 +95,22 @@ body {
 
 .box5 {
   grid-area: five;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
+
+.headline {
+  position: absolute;
+  bottom: 20%;
+  left: 6%;
+  color: white;
+  font-size: 32px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  max-width: 100%;
+  line-height: 1.2;
+}
+
 .box6 {
   grid-area: six;
 }
@@ -93,6 +122,89 @@ body {
 }
 .box9 {
   grid-area: nine;
+}
+.box7 {
+  grid-area: seven;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px hsla(0, 0%, 0%, 0.1);
+}
+
+.box7 h2 {
+  font-size: 25px;
+  color: #4e6ab9;
+  margin-bottom: 16px;
+  border-bottom: 2px solid hsl(0, 1%, 79%);
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.topic-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.topic-item img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.topic-item p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 4px 0;
+  line-height: 1.4;
+}
+
+.topic-item span {
+  font-size: 12px;
+  color: hsl(0, 0%, 42%);
+  display: block;
+}
+
+.box9 .weather2 {
+  font-size: 0px;
+  color: hsl(0, 0%, 100%);
+  padding: 0;
+  margin: 0;
+}
+.weather2 {
+  margin: 0;
+  padding: 0;
+}
+.box9 .nav-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.box9 .nav-items li {
+  font-size: 0px;
+  color: hsl(0, 0%, 2%);
+  margin: 0;
+  padding: 0;
 }
 .box10 {
   grid-area: ten;
