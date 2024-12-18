@@ -2,64 +2,290 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Personal Page</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="CSS/style.css" class="style" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div id="header">
-      <h1>Sayed Abbas Bahr</h1>
-    </div>
-    <div id="title">
-      <h2>Welcome to my personal Page</h2>
-      <p>
-        Success is not just about what you accomplish in your life; it’s about
-        what you inspire others to do.
-      </p>
-    </div>
-    <div id="about">
-      <img src="photos/Abbas.png" alt="photo of me; Sayed Abbas" />
-      <div>
-        <h3>ABOUT</h3>
-        <p>
-          I am a curious and enthusiastic learner, always eager to explore new
-          ideas and solve problems creatively. With a passion for helping
-          others, I thrive on turning complex concepts into simple,
-          understandable explanations.
-        </p>
+    <button
+      onclick="switchStyle()"
+      style="position: absolute; top: 0; right: 0"
+    >
+      Style
+    </button>
+    <img
+      src="https://cdn.imgchest.com/files/w7w6cvw89ye.png"
+      style="position: absolute; top: 0; left: 0; z-index: -1"
+    />
+    <div class="container">
+      <div class="box1"></div>
+
+      <div class="box2"></div>
+
+      <div class="box3">
+        <img
+          class="logo"
+          src="https://nazarnews.org/static/app/images/official_logo.png"
+          alt="nazarnews"
+        />
+      </div>
+
+      <div class="box4">
+        <ul class="weather">
+          <li class="bold"><i class="fa fa-cloud"></i> -2°C Bishkek</li>
+        </ul>
+        <div class="remove">
+          <ul class="nav-items">
+            <li class="main">Main page</li>
+            <li>Categories</li>
+            <li>Archive</li>
+            <li>Nazar TV</li>
+            <li>Live broadcasting</li>
+            <li>Discounts</li>
+            <li>Site managment</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box5">
+        <h1 class="headline">
+          Sadyr Japarov congratulated Kyrgyz people on <br />Defender of the
+          Mother land Day
+        </h1>
+      </div>
+
+      <div class="box6">
+        <div class="replace">
+          <div class="header">
+            <div class="logo">
+              <img
+                src="https://nazarnews.org/static/app/images/official_logo.png"
+                alt="Nazar News Logo"
+              />
+              <span class="tv-text">• TV</span>
+            </div>
+            <div class="view-more">
+              <a href="#">All Videos ➔</a>
+            </div>
+          </div>
+
+          <div class="video-gallery">
+            <div class="video-card">
+              <img
+                src="https://nazarnews.org/resize/250/250//media/news_images/2024/12/03/News_104730219633329813287882369938282434809.jpg"
+                alt="Video 1"
+              />
+              <div class="video-text">Коомдук ишмер июнь окуялары...</div>
+            </div>
+            <div class="video-card">
+              <img
+                src="https://nazarnews.org/resize/250/250//media/news_images/2023/02/16/News_32185964970722243975004689775780911689.jpg"
+                alt="Video 2"
+              />
+              <div class="video-text">Кыргызстандын эң бай адамдары</div>
+            </div>
+            <div class="video-card">
+              <img
+                src="https://nazarnews.org/resize/250/250//media/news_images/2023/06/08/News_325222507170203116655064150148940149447.jpg"
+                alt="Video 3"
+              />
+              <div class="video-text">Хиджабчан министрдин жоругу...</div>
+            </div>
+            <div class="video-card">
+              <img
+                src="https://nazarnews.org/resize/250/250//media/news_images/2019/02/11/NazarNews_51f964759239862f50747b5359dddfcc.jpg"
+                alt="Video 4"
+              />
+              <div class="video-text">Масалиев: Дастан Жумабековдун...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box7">
+        <h2 class="box7_h2">
+          <span>Topic of the Day: </span>
+          <span>everything ➔</span>
+        </h2>
+        <div class="topic-grid">
+          <div class="topic-item">
+            <img
+              src="https://nazarnews.org/resize/250/250//media/news_images/2024/11/13/News_131480758932430489037841393616315068018.jpg"
+              alt="Topic 1"
+            />
+            <div class="topic-text">
+              <p>
+                The condition of the man who set himself on fire in Bishkek is
+                serious
+              </p>
+              <span>01.03.2023 8:58 | Views: 171</span>
+            </div>
+          </div>
+          <div class="topic-item">
+            <img
+              src="https://nazarnews.org/resize/250/250//media/news_images/2024/11/25/News_8120654256041099903997103152142860473.jpg"
+              alt="Topic 2"
+            />
+            <div class="topic-text">
+              <p>
+                In March, the domestic debt will increase by 120 million soms
+              </p>
+              <span>01.03.2023 8:39 | Views: 0</span>
+            </div>
+          </div>
+          <div class="topic-item">
+            <img
+              src="https://nazarnews.org/resize/250/250//media/news_images/2024/11/01/News_13757297806385486912082022110723304847.jpg"
+              alt="Topic 3"
+            />
+            <div class="topic-text">
+              <p>
+                The Afghan embassy in Tehran has been officially handed over to
+                the Taliban
+              </p>
+              <span>28.02.2023 23:08 | Views: 691</span>
+            </div>
+          </div>
+          <div class="topic-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCY9vAvob_4j6cB8ca4adSdp6pneZkpCmV9bjqD8DcXOWTgq3bP1EkwRhTqpfUXMiEp14&usqp=CAU"
+              alt="Topic 4"
+            />
+            <div class="topic-text">
+              <p>In Russia, a wagon containing migrants caught fire</p>
+              <span>01.03.2023 8:46 | Views: 728</span>
+            </div>
+          </div>
+          <div class="topic-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlnV-IbtRPSIp6a4K7rlMzsHBnWMW0uj-Sao5jqB9DLYqfSJgmC9VORgSPMhprjJamwMc&usqp=CAU"
+              alt="Topic 5"
+            />
+            <div class="topic-text">
+              <p>How many days of rest do Kyrgyz citizens have in March?</p>
+              <span>01.03.2023 8:37 | Views: 565</span>
+            </div>
+          </div>
+          <div class="topic-item">
+            <img
+              src="https://nazarnews.org/resize/250/250//media/news_images/2024/11/25/News_120584574930933134431626339021489257770.jpeg"
+              alt="Topic 6"
+            />
+            <div class="topic-text">
+              <p>
+                A university teacher in Bishkek is suspected of having sex with
+                an underage student
+              </p>
+              <span>28.02.2023 23:01 | Views: 1612</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box8">
+        <div class="search-container">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search..." class="search-input" />
+        </div>
+      </div>
+
+      <div class="box9">
+        <ul class="weather2">
+          <li class="bold">-2°C Bishkek</li>
+        </ul>
+        <ul class="nav-items">
+          <li class="main">Main page</li>
+          <li>Categories</li>
+          <li>Archive</li>
+          <li>Nazar TV</li>
+          <li>Live broadcasting</li>
+          <li>Discounts</li>
+          <li>Site managment</li>
+        </ul>
+      </div>
+
+      <div class="box10">
+        <div class="box10-header">
+          <span class="margin">Important news</span>
+          <span class="margin">everything ➔</span>
+        </div>
+        <div class="box10-item">
+          <p>Ministry of Culture "PolitKlinika" site of EITR ..&gt;</p>
+          <span>6 days, 22 hours ago</span>
+        </div>
+        <hr />
+        <div class="box10-item">
+          <p>Chairman Nurlanbek Shakiev in the Republic of Korea ..&gt;</p>
+          <span>1 week ago</span>
+        </div>
+        <hr />
+        <div class="box10-item">
+          <p>Chairman Shakiev Paint and d ..&gt; in Daegu, Korea</p>
+          <span>1 week ago</span>
+        </div>
+        <hr />
+        <div class="box10-item">
+          <p>1077 Kyrgyz citizens are in Russian</p>
+          <span>4 days, 8 hours ago</span>
+        </div>
+        <hr />
+        <div class="box10-item">
+          <p>1077 Kyrgyz citizens are in Russian</p>
+          <span>4 days, 8 hours ago</span>
+        </div>
+        <hr />
+        <div class="box10-item">
+          <p>Chairman Shakiev Paint and d ..&gt; in Daegu, Korea</p>
+          <span>1 week ago</span>
+        </div>
+        <hr />
+        <div class="box10-item">
+          <p>Chairman Shakiev Paint and d ..&gt; in Daegu, Korea</p>
+          <span>1 week ago</span>
+        </div>
       </div>
     </div>
-    <h3>FAVORITES</h3>
-    <div id="fav">
-      <ol>
-        <li>Qabuli</li>
-        <li>Biryani</li>
-        <li>Mantu</li>
-      </ol>
-      <ol>
-        <li>Leonardo da Vinci</li>
-        <li>Messi</li>
-        <li>Martin Luther King Jr.</li>
-      </ol>
-      <ol>
-        <li>The Shawshank Redemption</li>
-        <li>Interstellar</li>
-        <li>Inception</li>
-      </ol>
-    </div>
-    <div id="wish">
-      <h3>WISHES</h3>
-      <p>
-        My wish is to become a successful UI/UX designer in the future, creating
-        designs that are both beautiful and user-friendly. Although I didn’t
-        share this in class, it is something I’m passionate about, and I am
-        determined to learn and grow in this field. I hope that, by the time I
-        achieve this goal, AI will be a tool that enhances a designer's
-        creativity and innovation, rather than replacing it. I believe that
-        human empathy, intuition, and the ability to understand people’s needs
-        are irreplaceable qualities that will always be at the heart of great
-        design.
-      </p>
-    </div>
+
+    <button class="buttonMenu">
+      <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+      <svg
+        height="32px"
+        id="Layer_1"
+        style="enable-background: new 0 0 32 32"
+        version="1.1"
+        viewBox="0 0 32 32"
+        width="32px"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <path
+          d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+        />
+      </svg>
+    </button>
+
+    <script>
+      const buttonMenu = document.querySelector(".buttonMenu");
+      const boxTwo = document.querySelector(".box9");
+      buttonMenu.addEventListener("click", () => {
+        console.log("yes, hamburger clicked!");
+        buttonMenu.classList.toggle("mobileMenu");
+        boxTwo.classList.toggle("mobileMenu");
+      });
+      function switchStyle() {
+        let style = document.querySelector(".style");
+        if (style.getAttribute("href") == "CSS/style2.css") {
+          style.setAttribute("href", "CSS/style.css");
+        } else {
+          style.setAttribute("href", "CSS/style2.css");
+        }
+      }
+    </script>
   </body>
 </html>
