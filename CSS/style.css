@@ -41,16 +41,23 @@ body {
 
 .box1 {
   grid-area: one;
-  background-image: url("/photos/nazar.png");
+  background-image: url("https://nazarnews.org/static/app/images/banner-static/new_banner_2023.png");
   background-size: cover;
   background-position: center center;
 }
 
 .box2 {
   grid-area: two;
-  background-image: url("/photos/nazar2.png");
-  background-size: cover;
-  background-position: center center;
+  background-color: #064f7e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.box2 p {
+  font-size: 12px;
 }
 
 .box3 {
@@ -286,7 +293,8 @@ body {
 
 .box9 {
   grid-area: nine;
-  background: url("/photos/nazar3.png") center/cover;
+  background: url("https://www.usnews.com/cmsmedia/5d/34/62c9a4d24d88bf9676ae19c6fce6/cb-2025-cover-150dpi.jpg")
+    center/cover;
 }
 .box9 .rm-9 {
   display: none;

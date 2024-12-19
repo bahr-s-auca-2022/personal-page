@@ -48,6 +48,7 @@ body > img:nth-of-type(1) {
 
 .box2 {
   grid-area: two;
+  display: none;
 }
 
 .box3 {
