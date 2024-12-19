@@ -20,14 +20,14 @@ body {
 body > img:nth-of-type(1) {
   display: none;
 }
+/* .container > * {
+  border: 2px dashed blue;
+} */
 
 .container {
   display: grid;
   grid-template-rows:
-    minmax(94px, auto) minmax(415px, auto) minmax(200px, auto) minmax(
-      77px,
-      auto
-    )
+    minmax(94px, auto) minmax(95px, auto) minmax(200px, auto) minmax(77px, auto)
     minmax(415px, auto) minmax(194px, auto) minmax(494px, auto);
   grid-template-columns:
     minmax(20px, 900px) minmax(20px, 474px) minmax(20px, 87px)
@@ -278,7 +278,9 @@ body > img:nth-of-type(1) {
   background-color: #f9f9f9;
   padding: 15px 20px;
 }
-
+.box8 .rm-new {
+  display: none;
+}
 .search-container {
   display: flex;
   align-items: center;
@@ -469,5 +471,23 @@ hr {
       "seven"
       "ten"
       "six";
+  }
+  .headline {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: rgb(221, 219, 219);
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    max-width: 80%;
+    line-height: 1.2;
+  }
+
+  .box8 {
+    flex-grow: 0; /* Prevents the box from growing too much */
+    flex-shrink: 1; /* Allows the box to shrink if needed */
+    max-width: 100%; /* Ensures it doesn’t exceed the viewport width */
+    height: auto; /* Adjust height to fit content */
   }
 }

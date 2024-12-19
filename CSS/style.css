@@ -18,7 +18,7 @@ body {
   border: 2px dashed blue;
 }
 
-/*i have 4 columns */
+/* I have 4 columns */
 .container {
   display: grid;
   grid-template-rows: 120px 31px 94px 77px 415px 194px 494px;
@@ -34,15 +34,25 @@ body {
     "six   six   six   six"
     "seven seven ten   ten";
 }
+
 .buttonMenu {
   display: none;
 }
+
 .box1 {
   grid-area: one;
+  background-image: url("/photos/nazar.png");
+  background-size: cover;
+  background-position: center center;
 }
+
 .box2 {
   grid-area: two;
+  background-image: url("/photos/nazar2.png");
+  background-size: cover;
+  background-position: center center;
 }
+
 .box3 {
   grid-area: three;
   display: flex;
@@ -67,9 +77,11 @@ body {
   max-width: 100%;
   min-height: 100%;
 }
+
 .main {
   white-space: nowrap;
 }
+
 .weather {
   list-style-type: none;
   margin: 0;
@@ -97,6 +109,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  background: url(https://nazarnews.org/resize/no-crop/600/600//media/news_images/2024/12/04/News_16498890147904060488065561314337328459.jpeg);
 }
 
 .headline {
@@ -113,16 +126,22 @@ body {
 
 .box6 {
   grid-area: six;
+  background: url("https://nazarnews.org/static/app/images/ads/2_00000.png")
+    center/cover;
 }
+
 .box6 .replace {
   font-size: 0px;
 }
+
 .logo img {
   display: none;
 }
+
 .video-card img {
   display: none;
 }
+
 .box7 {
   grid-area: seven;
   max-width: 1000px;
@@ -198,34 +217,80 @@ body {
 
 .box8 {
   grid-area: eight;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f8f9fa;
+  padding: 15px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+.rm-new {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.rm-new .rate .usd {
+  color: green;
+}
+
+.rm-new .rate .eur {
+  color: green;
+}
+
+.rm-new .rate .rub {
+  color: red;
+}
+
+.rm-new .right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.rm-new .icon,
+.rm-new .dropdown {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.box8 .rm {
   display: none;
 }
 
 .box9 {
   grid-area: nine;
+  background: url("/photos/nazar3.png") center/cover;
 }
-.box9 .weather2 {
-  font-size: 0px;
-  color: hsl(0, 0%, 100%);
-  padding: 0;
-  margin: 0;
+.box9 .rm-9 {
+  display: none;
 }
-.weather2 {
-  margin: 0;
-  padding: 0;
-}
-.box9 .nav-items {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.box9 .nav-items li {
-  font-size: 0px;
-  color: hsl(0, 0%, 2%);
-  margin: 0;
-  padding: 0;
-}
-
 .box10 {
   grid-area: ten;
   background-color: #1c61cd;
@@ -267,25 +332,31 @@ hr {
   margin: 8px 0;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid #a3b4c2;
-  margin: 8px 0;
-}
-
 @media (max-width: 500px) {
   .container {
     grid-template-columns: 100%;
-
     grid-template-areas:
       "one"
       "two"
       "three"
       "four"
       "five"
+      "nine"
       "six"
       "seven"
       "eight"
-      "nine";
+      "ten";
+  }
+
+  .box3 img {
+    max-width: 100%;
+  }
+
+  .headline {
+    font-size: 20px;
+  }
+
+  .topic-grid {
+    grid-template-columns: 1fr;
   }
 }
